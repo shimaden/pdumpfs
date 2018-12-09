@@ -1,0 +1,7 @@
+http://x68000.q-e-d.net/~68user/unix/pickup?rsync
+
+rsync -aHAX --partial --exclude=PATTERN /bin /backup/qdumpfs/2016/12/01
+rsync -aHAX --partial --delete --exclude=PATTERN --link-dest=/backup/qdumpfs/2016/12/01/bin /bin /backup/rsync/2016/12/02
+rsync -aHAX --partial --delete --exclude=PATTERN --link-dest=/backup/qdumpfs/2016/12/02/bin /bin /backup/rsync/2016/12/03
+
+or --exclude-from=FILE
